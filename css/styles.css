@@ -15,15 +15,56 @@
   --primary-text-color: #212121;
   --text-color: #757575;
   --accent-color: #2196f3;
-  --primary-white-color: #FFFFFF
-  --primary-bg-color: #E5E5E5
-  --secondary-bg-color: #F5F4FA
+  --primary-white-color: #ffffff;
+  --primary-bg-color: #e5e5e5;
+  --secondary-bg-color: #f5f4fa;
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
 }
 
+/*Для сброса*/
+.list {
+  list-style: none;
+  text-decoration: none;
+}
 
+/*Логотип*/
+.logo {
+  color: var(--primary-text-color);
+}
 
+.logo .blue {
+  color: var(--accent-color);
+}
 
+/*Навигация сайта*/
+.site-nav .link {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/*Герой*/
+.hero-title {
+  color: var(--primary-white-color);
+}
+
+/*Секции*/
+.text {
+  color: var(--text-color);
+}
+
+/*Футер*/
+.address {
+  color: var(--primary-white-color);
+}
+
+.contacts-text {
+  color: var(--text-color);
+}
