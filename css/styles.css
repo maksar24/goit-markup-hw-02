@@ -1,0 +1,29 @@
+/* Палитра
+основной цвет #212121
+втормчный цвет #757575
+белый #FFFFFF
+акцент #2196F3
+цвет контактов в footer rgba(255, 255, 255, 0.6)
+
+основной цвет фона #E5E5E5
+вторияный цвет фона #F5F4FA
+цвет header #FFFFFF
+цвет footer #2F303A
+*/
+
+:root {
+  --primary-text-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-white-color: #FFFFFF
+  --primary-bg-color: #E5E5E5
+  --secondary-bg-color: #F5F4FA
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+
+
+
