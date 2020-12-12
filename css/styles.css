@@ -5,8 +5,7 @@
 акцент #2196F3
 цвет контактов в footer rgba(255, 255, 255, 0.6)
 
-основной цвет фона #E5E5E5
-вторияный цвет фона #F5F4FA
+основной цвет фона #FFFFFF
 цвет header #FFFFFF
 цвет footer #2F303A
 */
@@ -16,12 +15,12 @@
   --text-color: #757575;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
-  --primary-bg-color: #e5e5e5;
   --secondary-bg-color: #f5f4fa;
+  --another-bg-color: #2f303a;
 }
 
 body {
-  background-color: var(--primary-bg-color);
+  background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 }
 
@@ -31,6 +30,11 @@ body {
   text-decoration: none;
 }
 
+/*Для скрытия*/
+.title-none {
+  display: none;
+}
+
 /*Логотип*/
 .logo {
   color: var(--primary-text-color);
@@ -38,6 +42,10 @@ body {
 
 .logo .blue {
   color: var(--accent-color);
+}
+
+.logo .black {
+  color: var(--primary-white-color);
 }
 
 /*Навигация сайта*/
@@ -50,9 +58,27 @@ body {
   color: var(--accent-color);
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/*Контакты в хедере*/
+.contacts-top:hover,
+.contacts-top:focus {
+  color: var(--accent-color);
+}
+
+.contacts-top {
+  color: var(--text-color);
+}
+
 /*Герой*/
 .hero-title {
   color: var(--primary-white-color);
+}
+
+.hero {
+  background-color: var(--another-bg-color);
 }
 
 /*Секции*/
@@ -60,11 +86,45 @@ body {
   color: var(--text-color);
 }
 
+.section.team {
+  background-color: var(--secondary-bg-color);
+}
+
+.team .card {
+  background-color: var(--primary-white-color);
+}
+
 /*Футер*/
+.footer {
+  background-color: var(--another-bg-color);
+}
+
 .address {
   color: var(--primary-white-color);
 }
 
 .contacts-text {
-  color: var(--text-color);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*Кнопки*/
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.radio-button {
+  background-color: var(--secondary-bg-color);
+}
+
+.filter:hover,
+.filter:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+/*Карточки портфолио*/
+.portfolio-example {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
 }
