@@ -3,10 +3,11 @@
   --text-color: #757575;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --another-color: rgba(255, 255, 255, 0.6);
   --secondary-bg-color: #f5f4fa;
   --another-bg-color: #2f303a;
 
-  --primary-front-size: 14px;
+  --primary-font-size: 14px;
   --special-font-weight: 500;
 }
 
@@ -14,6 +15,8 @@ body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 
+  font-size: var(--primary-font-size);
+  font-weight: var(--special-font-weight);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
@@ -51,8 +54,6 @@ body {
 .site-nav .link {
   color: var(--primary-text-color);
 
-  font-weight: var(--special-font-weight);
-  font-size: var(--primary-front-size);
   line-height: 1.14px;
   letter-spacing: 0.02em;
 }
@@ -112,13 +113,13 @@ body {
 }
 
 .title {
-  font-size: 14px;
+  font-size: inherit;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
 .text.quality {
-  font-size: var(--primary-front-size);
+  font-weight: 400;
   line-height: 1.71;
 }
 
@@ -142,15 +143,20 @@ body {
   color: var(--primary-white-color);
 
   font-style: normal;
-  font-size: var(--primary-front-size);
+  font-weight: 400;
   line-height: 1.71;
 }
 
 .contacts-text {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--another-color);
 
-  font-size: var(--primary-front-size);
+  font-weight: 400;
   line-height: 1.71;
+}
+
+.contacts-text:hover,
+.contacts-text:focus {
+  color: var(--accent-color);
 }
 
 /*Кнопки*/
@@ -167,7 +173,11 @@ body {
 }
 
 .radio-button {
-  background-color: var(--secondary-bg-color);
+  background-color: var(--primary-white-color);
+}
+
+.radio-button .filter {
+  color: var(--primary-text-color);
 
   font-family: inherit;
   font-weight: var(--special-font-weight);
