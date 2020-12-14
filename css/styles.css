@@ -46,7 +46,7 @@ body {
   color: var(--accent-color);
 }
 
-.logo .black {
+.logo.bottom {
   color: var(--primary-white-color);
 }
 
@@ -147,11 +147,8 @@ body {
   line-height: 1.71;
 }
 
-.contacts-text {
+.address.contacts-text {
   color: var(--another-color);
-
-  font-weight: 400;
-  line-height: 1.71;
 }
 
 .contacts-text:hover,
